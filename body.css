@@ -1,0 +1,45 @@
+main{
+    background-color: Beige;
+}
+main section{
+    padding: 5vh;
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+main section .body-img{
+
+    box-shadow: 10px 10px 5px gray;
+}
+main section .content{
+    width: 40vw;
+}
+main section .body-img img{
+    /* height: 60vh; */
+    width: 40vw;
+    
+}
+@media screen and (max-width:900px){
+    main section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    main section .body-img{
+
+        box-shadow: 15px 15px 5px gray;
+    }
+    main section .body-img img{
+        width: 100%;
+        order: 1;
+    }
+    main section .content{
+        order: 2;
+        width: 100%;
+        padding-top: 2em;
+    }
+
+    
+}

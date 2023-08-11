@@ -1,0 +1,67 @@
+body{
+    background: linear-gradient(45deg,blue,red);
+    /* box-sizing: border-box; */
+}
+.container{
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container form{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    border: 2px solid black;
+    /* border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%; */
+    padding: 2rem;
+    box-shadow: 10px 10px 5px black;
+}
+.container form>*{
+    padding: 1vh;
+}
+.container .btnbox{
+    display: flex;
+    justify-content: space-around;
+}
+.container .genderbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .btnbox button{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    
+   color: aliceblue;
+    background: linear-gradient(45deg,blue,red);
+}
+.container .btnbox button:hover{
+   background: gray;
+}
+
+.container .btnbox button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width:900px) {
+    .container form{
+        width: 100%;
+        margin: 10vw;
+    }
+    .container .genderbox{
+        flex-direction: column;
+        align-items: start;
+    }
+    .container .btnbox button{
+    width: 25vw;
+
+}
+}
