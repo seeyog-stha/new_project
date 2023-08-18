@@ -1,3 +1,14 @@
+.imgcontainer img{
+    position: absolute;
+    z-index: -1;
+    right: 1%;
+    /* float: right; */
+    width: 45vw;
+    height: 50vh;
+    animation-name: slider;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
 body{
 
     background: linear-gradient(45deg,Beige,black);
@@ -18,17 +29,6 @@ body{
 }
 
 
-.imgcontainer img{
-    position: absolute;
-    z-index: -1;
-    right: 1%;
-    /* float: right; */
-    width: 45vw;
-    height: 50vh;
-    animation-name: slider;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-}
 .container_about .textcontainer{
     width: 30vw;
     display: flex;
@@ -37,27 +37,25 @@ body{
     align-items: center;
     
 }
-#img1{
-    animation-delay: 0s;
-}
+
 #img2{
-    animation-delay: 5s;
+    animation-delay:3s;
 }
 #img3{
-    animation-delay: 10s;
+    animation-delay: 6s;
 }
 @keyframes slider{
     0%{
         opacity: 1;
     }
-    33.2%{
+    32%{
            opacity: 1;
     }
-    33.3%{
+    33%{
         opacity: 0;
     }
     100%{
-             opacity: 0;
+          opacity: 0;
     }
 
 }
